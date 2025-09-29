@@ -1,0 +1,630 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Esthétique et Formations - Institut de Beauté Toulouse</title>
+    <meta name="description" content="Institut de beauté professionnel à Toulouse. Soins esthétiques, formations professionnelles dans un cadre cosy et apaisant. Réservez votre rendez-vous.">
+    <link rel="icon" type="image/png" href="images/logo-nouveau.png">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- HEADER -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <a href="#accueil" class="logo">
+                    <img src="images/logo-nouveau.png" alt="Esthétique et Formations" class="logo-img">
+                </a>
+                <nav class="nav">
+                    <ul>
+                        <li><a href="#accueil">Accueil</a></li>
+                        <li><a href="#apropos">À propos</a></li>
+                        <li><a href="#prestations">Prestations</a></li>
+                        <li><a href="#formations">Formations</a></li>
+                        <li><a href="#galerie">Galerie</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section id="accueil" class="hero">
+        <div class="hero-bg">
+            <img src="images/fond 1ère page.png" alt="Institut de beauté">
+        </div>
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1>L'Instant Sublime</h1>
+                    <p class="hero-subtitle">Institut de beauté professionnel à Toulouse</p>
+                    <p class="hero-description">
+                        Découvrez un cadre chaleureux et apaisant où l'excellence rencontre la bienveillance. 
+                        Nos soins sur-mesure et notre expertise professionnelle vous garantissent une détente idyllique 
+                        dans une atmosphère cosy et raffinée.
+                    </p>
+                    <div class="hero-buttons">
+                        <a href="#prestations" class="btn btn-primary">Découvrir nos soins</a>
+                        <a href="#contact" class="btn btn-secondary">Prendre rendez-vous</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- À PROPOS -->
+    <section id="apropos" class="section about">
+        <div class="container">
+            <h2 class="section-title">À Propos de Nous</h2>
+            <p class="section-subtitle">Un cadre chaleureux pour votre bien-être</p>
+            
+            <div class="about-content">
+                <div class="about-text">
+                    <h3>Excellence & Bienveillance</h3>
+                    <p>
+                        Dans notre institut cosy de Toulouse, nous créons une atmosphère apaisante où chaque cliente 
+                        se sent accueillie avec bienveillance. Notre professionnalisme et notre expertise se conjuguent 
+                        pour vous offrir des soins sur-mesure dans un cadre chaleureux et raffiné.
+                    </p>
+                    <p>
+                        Passionnés par notre métier, nous mettons tout en œuvre pour que votre moment de détente 
+                        soit une véritable parenthèse enchantée. L'écoute et la personnalisation sont au cœur de 
+                        notre approche, garantissant une expérience unique et mémorable.
+                    </p>
+                    <p>
+                        Que vous veniez pour un soin ou une formation professionnelle, vous découvrirez un havre de paix 
+                        où l'excellence technique rencontre la douceur du service. Votre bien-être est notre priorité absolue.
+                    </p>
+                </div>
+                <div class="about-image">
+                    <img src="images/Massage.jpg.jpeg" alt="Institut de beauté cosy">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PRESTATIONS -->
+    <section id="prestations" class="section services">
+        <div class="container">
+            <h2 class="section-title">Nos Prestations</h2>
+            <p class="section-subtitle">Des soins d'exception pour votre beauté et votre bien-être</p>
+            
+            <div class="services-grid">
+                <!-- Cils & Sourcils -->
+                <div class="service-card">
+                    <img src="images/avant après cils.jpeg" alt="Cils & Sourcils">
+                    <div class="service-content">
+                        <h3>Cils & Sourcils</h3>
+                        <p>Extensions, volume russe, rehaussement et soins spécialisés pour des regards magnifiques.</p>
+                        <div class="service-price">À partir de 15€</div>
+                        <div class="service-buttons">
+                            <button class="btn btn-primary" onclick="openServiceModal('cils')">Découvrir</button>
+                            <button class="btn btn-whatsapp" onclick="openReservationModal('cils')">📱 Réserver</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Soins du Visage -->
+                <div class="service-card">
+                    <img src="images/soins visages.jpeg" alt="Soins du Visage">
+                    <div class="service-content">
+                        <h3>Soins du Visage</h3>
+                        <p>BB Glow, soins anti-âge, hydratation et traitements personnalisés pour une peau éclatante.</p>
+                        <div class="service-price">À partir de 30€</div>
+                        <div class="service-buttons">
+                            <button class="btn btn-primary" onclick="openServiceModal('visage')">Découvrir</button>
+                            <button class="btn btn-whatsapp" onclick="openReservationModal('visage')">📱 Réserver</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Massage et Autres -->
+                <div class="service-card">
+                    <img src="images/Massage.jpg.jpeg" alt="Massage et Autres">
+                    <div class="service-content">
+                        <h3>Massage & Bien-être</h3>
+                        <p>Massages relaxants, head spa japonais et soins corporels pour une détente totale.</p>
+                        <div class="service-price">À partir de 35€</div>
+                        <div class="service-buttons">
+                            <button class="btn btn-primary" onclick="openServiceModal('massage')">Découvrir</button>
+                            <button class="btn btn-whatsapp" onclick="openReservationModal('massage')">📱 Réserver</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Ongles et Soins -->
+                <div class="service-card">
+                    <img src="images/nails.jpeg" alt="Ongles et Soins">
+                    <div class="service-content">
+                        <h3>Ongles & Nail Art</h3>
+                        <p>Manucure, pédicure, nail art 3D et techniques innovantes pour des ongles parfaits.</p>
+                        <div class="service-price">À partir de 15€</div>
+                        <div class="service-buttons">
+                            <button class="btn btn-primary" onclick="openServiceModal('ongles')">Découvrir</button>
+                            <button class="btn btn-whatsapp" onclick="openReservationModal('ongles')">📱 Réserver</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Maquillage -->
+                <div class="service-card">
+                    <img src="images/avant après visage jpg.jpeg" alt="Maquillage">
+                    <div class="service-content">
+                        <h3>Maquillage</h3>
+                        <p>Maquillage de jour, de soirée, mariée et cours particuliers pour révéler votre beauté.</p>
+                        <div class="service-price">À partir de 25€</div>
+                        <div class="service-buttons">
+                            <button class="btn btn-primary" onclick="openServiceModal('maquillage')">Découvrir</button>
+                            <button class="btn btn-whatsapp" onclick="openReservationModal('maquillage')">📱 Réserver</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Dentaire -->
+                <div class="service-card">
+                    <img src="images/avant après dent.jpeg" alt="Soins Dentaires">
+                    <div class="service-content">
+                        <h3>Blanchiment Dentaire</h3>
+                        <p>Techniques professionnelles de blanchiment pour un sourire éclatant et naturel.</p>
+                        <div class="service-price">À partir de 25€</div>
+                        <div class="service-buttons">
+                            <button class="btn btn-primary" onclick="openServiceModal('dentaire')">Découvrir</button>
+                            <button class="btn btn-whatsapp" onclick="openReservationModal('dentaire')">📱 Réserver</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Épilation -->
+                <div class="service-card">
+                    <img src="images/soins visages.jpeg" alt="Épilation">
+                    <div class="service-content">
+                        <h3>Épilation</h3>
+                        <p>Épilation professionnelle du visage et du corps pour une peau douce et nette.</p>
+                        <div class="service-price">À partir de 8€</div>
+                        <div class="service-buttons">
+                            <button class="btn btn-primary" onclick="openServiceModal('epilation')">Découvrir</button>
+                            <button class="btn btn-whatsapp" onclick="openReservationModal('epilation')">📱 Réserver</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FORMATIONS -->
+    <section id="formations" class="section formations">
+        <div class="container">
+            <h2 class="section-title">Formations Professionnelles</h2>
+            <p class="section-subtitle">Développez votre expertise avec nos formations spécialisées</p>
+            
+            <div class="formations-content">
+                <div class="formation-category">
+                    <h3 class="formation-category-title">CILS ET SOURCILS</h3>
+                    <div class="formations-grid">
+                        <div class="formation-card">
+                            <h4>Cils + volume russe + rehaussement cils et sourcils</h4>
+                            <div class="formation-details">
+                                <span class="formation-duration">1 jour</span>
+                                <span class="formation-price">400€</span>
+                            </div>
+                            <p>Formation complète pour maîtriser toutes les techniques de cils et sourcils</p>
+                        </div>
+                        <div class="formation-card">
+                            <h4>Brow lift sourcils</h4>
+                            <div class="formation-details">
+                                <span class="formation-duration">1 jour</span>
+                                <span class="formation-price">200€</span>
+                            </div>
+                            <p>Technique spécialisée pour le rehaussement des sourcils</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="formation-category">
+                    <h3 class="formation-category-title">SOINS DU VISAGE</h3>
+                    <div class="formations-grid">
+                        <div class="formation-card">
+                            <h4>BB Glow</h4>
+                            <div class="formation-details">
+                                <span class="formation-duration">1 jour</span>
+                                <span class="formation-price">300€</span>
+                            </div>
+                            <p>Technique révolutionnaire pour un teint parfait et uniforme</p>
+                        </div>
+                        <div class="formation-card">
+                            <h4>Soins visage anti-âge</h4>
+                            <div class="formation-details">
+                                <span class="formation-duration">2 jours</span>
+                                <span class="formation-price">500€</span>
+                            </div>
+                            <p>Protocoles complets pour les soins anti-âge professionnels</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="formation-category">
+                    <h3 class="formation-category-title">MASSAGE & BIEN-ÊTRE</h3>
+                    <div class="formations-grid">
+                        <div class="formation-card">
+                            <h4>Head Spa Japonais</h4>
+                            <div class="formation-details">
+                                <span class="formation-duration">1 jour</span>
+                                <span class="formation-price">250€</span>
+                            </div>
+                            <p>Technique japonaise de relaxation et soin du cuir chevelu</p>
+                        </div>
+                        <div class="formation-card">
+                            <h4>Massage relaxant</h4>
+                            <div class="formation-details">
+                                <span class="formation-duration">2 jours</span>
+                                <span class="formation-price">400€</span>
+                            </div>
+                            <p>Techniques de massage pour la relaxation et le bien-être</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="formation-category">
+                    <h3 class="formation-category-title">ONGLES & NAIL ART</h3>
+                    <div class="formations-grid">
+                        <div class="formation-card">
+                            <h4>Nail Art 3D</h4>
+                            <div class="formation-details">
+                                <span class="formation-duration">1 jour</span>
+                                <span class="formation-price">200€</span>
+                            </div>
+                            <p>Techniques créatives pour des ongles artistiques en 3D</p>
+                        </div>
+                        <div class="formation-card">
+                            <h4>Manucure & Pédicure</h4>
+                            <div class="formation-details">
+                                <span class="formation-duration">1 jour</span>
+                                <span class="formation-price">150€</span>
+                            </div>
+                            <p>Techniques professionnelles de manucure et pédicure</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="formation-contact">
+                    <h3>Intéressé(e) par nos formations ?</h3>
+                    <p>Contactez-nous pour plus d'informations et pour réserver votre place</p>
+                    <a href="https://wa.me/33619698984?text=Bonjour,%20je%20souhaite%20des%20informations%20sur%20vos%20formations" class="btn btn-whatsapp">📱 Me contacter au : 06 19 69 89 84</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- GALERIE -->
+    <section id="galerie" class="section gallery">
+        <div class="container">
+            <h2 class="section-title">Notre Galerie</h2>
+            <p class="section-subtitle">Découvrez nos réalisations et transformations</p>
+            
+            <!-- Avant/Après Section -->
+            <div class="gallery-section">
+                <h3 class="gallery-section-title">Avant/Après</h3>
+                <p class="gallery-section-subtitle">Transformations réelles de nos clientes</p>
+                
+                <div class="gallery-grid">
+                    <div class="gallery-item before-after-item">
+                        <div class="before-after">
+                            <div class="before">
+                                <img src="images/avant après cils 2.jpeg" alt="Avant" class="gallery-img">
+                                <span class="badge badge-danger">Avant</span>
+                            </div>
+                            <div class="after">
+                                <img src="images/avant après cils.jpeg" alt="Après" class="gallery-img">
+                                <span class="badge badge-success">Après</span>
+                            </div>
+                        </div>
+                        <div class="gallery-content">
+                            <h4>Volume russe</h4>
+                            <p>Transformation spectaculaire avec la technique Volume russe</p>
+                            <div class="gallery-rating">⭐⭐⭐⭐⭐</div>
+                        </div>
+                    </div>
+
+                    <div class="gallery-item before-after-item">
+                        <div class="before-after">
+                            <div class="before">
+                                <img src="images/avant après peau.jpeg" alt="Avant" class="gallery-img">
+                                <span class="badge badge-danger">Avant</span>
+                            </div>
+                            <div class="after">
+                                <img src="images/avant après 2.jpeg" alt="Après" class="gallery-img">
+                                <span class="badge badge-success">Après</span>
+                            </div>
+                        </div>
+                        <div class="gallery-content">
+                            <h4>BB Glow</h4>
+                            <p>Teint parfait et uniforme grâce au BB Glow révolutionnaire</p>
+                            <div class="gallery-rating">⭐⭐⭐⭐⭐</div>
+                        </div>
+                    </div>
+
+                    <div class="gallery-item before-after-item">
+                        <div class="before-after">
+                            <div class="before">
+                                <img src="images/avant après corps.jpeg" alt="Avant" class="gallery-img">
+                                <span class="badge badge-danger">Avant</span>
+                            </div>
+                            <div class="after">
+                                <img src="images/avant,après corps.jpeg" alt="Après" class="gallery-img">
+                                <span class="badge badge-success">Après</span>
+                            </div>
+                        </div>
+                        <div class="gallery-content">
+                            <h4>Lifting colombien</h4>
+                            <p>Modelage corporel unique pour une silhouette redessinée</p>
+                            <div class="gallery-rating">⭐⭐⭐⭐⭐</div>
+                        </div>
+                    </div>
+
+                    <div class="gallery-item before-after-item">
+                        <div class="before-after">
+                            <div class="before">
+                                <img src="images/avant après dent.jpeg" alt="Avant" class="gallery-img">
+                                <span class="badge badge-danger">Avant</span>
+                            </div>
+                            <div class="after">
+                                <img src="images/avant après dent.jpeg" alt="Après" class="gallery-img">
+                                <span class="badge badge-success">Après</span>
+                            </div>
+                        </div>
+                        <div class="gallery-content">
+                            <h4>Blanchiment dentaire</h4>
+                            <p>Transformation spectaculaire avec notre technique de blanchiment</p>
+                            <div class="gallery-rating">⭐⭐⭐⭐⭐</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Nos Réalisations Section -->
+            <div class="gallery-section">
+                <h3 class="gallery-section-title">Nos Réalisations</h3>
+                <p class="gallery-section-subtitle">Photos de nos créations et techniques</p>
+                
+                <div class="gallery-grid">
+                    <div class="gallery-item realisation-item">
+                        <div class="realisation-image">
+                            <img src="images/nails.jpeg" alt="Nail Art" class="gallery-img">
+                        </div>
+                        <div class="realisation-content">
+                            <h4>Nail Art</h4>
+                            <p>Créations artistiques uniques</p>
+                            <div class="gallery-rating">⭐⭐⭐⭐⭐</div>
+                        </div>
+                    </div>
+
+                    <div class="gallery-item realisation-item">
+                        <div class="realisation-image">
+                            <img src="images/nails 2.jpeg" alt="French Manicure" class="gallery-img">
+                        </div>
+                        <div class="realisation-content">
+                            <h4>French Manicure</h4>
+                            <p>Élégance intemporelle</p>
+                            <div class="gallery-rating">⭐⭐⭐⭐⭐</div>
+                        </div>
+                    </div>
+
+                    <div class="gallery-item realisation-item">
+                        <div class="realisation-image">
+                            <img src="images/nail 3.jpeg" alt="Nail Art 3D" class="gallery-img">
+                        </div>
+                        <div class="realisation-content">
+                            <h4>Nail Art 3D</h4>
+                            <p>Techniques créatives avancées</p>
+                            <div class="gallery-rating">⭐⭐⭐⭐⭐</div>
+                        </div>
+                    </div>
+
+                    <div class="gallery-item realisation-item">
+                        <div class="realisation-image">
+                            <img src="images/nails pied 2.jpeg" alt="Pédicure" class="gallery-img">
+                        </div>
+                        <div class="realisation-content">
+                            <h4>Pédicure</h4>
+                            <p>Soins des pieds professionnels</p>
+                            <div class="gallery-rating">⭐⭐⭐⭐⭐</div>
+                        </div>
+                    </div>
+
+                    <div class="gallery-item realisation-item">
+                        <div class="realisation-image">
+                            <img src="images/cils.jpeg" alt="Extensions cils" class="gallery-img">
+                        </div>
+                        <div class="realisation-content">
+                            <h4>Extensions cils</h4>
+                            <p>Regard magnifique garanti</p>
+                            <div class="gallery-rating">⭐⭐⭐⭐⭐</div>
+                        </div>
+                    </div>
+
+                    <div class="gallery-item realisation-item">
+                        <div class="realisation-image">
+                            <img src="images/head spa japonnais.JPG" alt="Head Spa Japonais" class="gallery-img">
+                        </div>
+                        <div class="realisation-content">
+                            <h4>Head Spa Japonais</h4>
+                            <p>Relaxation authentique</p>
+                            <div class="gallery-rating">⭐⭐⭐⭐⭐</div>
+                        </div>
+                    </div>
+
+                    <div class="gallery-item realisation-item">
+                        <div class="realisation-image">
+                            <img src="images/Massage.jpg.jpeg" alt="Massage Relaxation" class="gallery-img">
+                        </div>
+                        <div class="realisation-content">
+                            <h4>Massage Relaxation</h4>
+                            <p>Détente absolue</p>
+                            <div class="gallery-rating">⭐⭐⭐⭐⭐</div>
+                        </div>
+                    </div>
+
+                    <div class="gallery-item realisation-item">
+                        <div class="realisation-image">
+                            <img src="images/nails peids.jpeg" alt="Pédicure French" class="gallery-img">
+                        </div>
+                        <div class="realisation-content">
+                            <h4>Pédicure French</h4>
+                            <p>Élégance des pieds</p>
+                            <div class="gallery-rating">⭐⭐⭐⭐⭐</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section contact">
+        <div class="container">
+            <h2 class="section-title">Contactez-Nous</h2>
+            <p class="section-subtitle">Prenez rendez-vous dans notre institut cosy de Toulouse</p>
+            
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>Informations Pratiques</h3>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">📍</div>
+                        <div class="contact-details">
+                            <h4>Adresse</h4>
+                            <p>Toulouse, Occitanie<br>France</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">📞</div>
+                        <div class="contact-details">
+                            <h4>Téléphone</h4>
+                            <p>06 19 69 89 84</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">🕒</div>
+                        <div class="contact-details">
+                            <h4>Horaires</h4>
+                            <p>Lundi au Vendredi<br>9h-12h / 14h-18h30</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">💬</div>
+                        <div class="contact-details">
+                            <h4>WhatsApp</h4>
+                            <p>Réservation instantanée</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="contact-form">
+                    <h3>Demande de Rendez-vous</h3>
+                    <form>
+                        <div class="form-group">
+                            <label for="name">Nom complet</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Téléphone</label>
+                            <input type="tel" id="phone" name="phone" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="service">Service souhaité</label>
+                            <input type="text" id="service" name="service" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" rows="4"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Envoyer la demande</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <img src="images/logo-nouveau.png" alt="Esthétique et Formations">
+                </div>
+                
+                <div class="footer-info">
+                    <div class="footer-section">
+                        <h4>Institut</h4>
+                        <p>Votre havre de paix esthétique à Toulouse</p>
+                        <p>Cadre cosy et professionnel</p>
+                    </div>
+                    
+                    <div class="footer-section">
+                        <h4>Services</h4>
+                        <p>Soins esthétiques</p>
+                        <p>Formations professionnelles</p>
+                        <p>Massages & bien-être</p>
+                    </div>
+                    
+                    <div class="footer-section">
+                        <h4>Contact</h4>
+                        <p>06 19 69 89 84</p>
+                        <p>Toulouse, Occitanie</p>
+                        <p>Lun-Ven: 9h-12h / 14h-18h30</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2024 Esthétique & Formations. Tous droits réservés.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- WHATSAPP FLOATING BUTTON -->
+    <a href="https://wa.me/33619698984?text=Bonjour,%20je%20souhaite%20prendre%20rendez-vous" class="whatsapp-float" target="_blank">
+        📱
+    </a>
+
+    <!-- MODAL POUR LES SERVICES -->
+    <div id="serviceModal" class="modal">
+        <div class="modal-content">
+            <span class="modal-close" onclick="closeServiceModal()">&times;</span>
+            <h3 id="modalTitle">Détails du Service</h3>
+            <ul class="services-list" id="modalServicesList">
+                <!-- Contenu dynamique -->
+            </ul>
+        </div>
+    </div>
+
+    <!-- MODAL POUR LA RÉSERVATION -->
+    <div id="reservationModal" class="modal">
+        <div class="modal-content">
+            <span class="modal-close" onclick="closeReservationModal()">&times;</span>
+            <h3 id="reservationTitle">Réserver un Service</h3>
+            <div class="reservation-content">
+                <p class="reservation-subtitle">Sélectionnez le service exact que vous souhaitez réserver :</p>
+                <div class="services-selection" id="servicesSelection">
+                    <!-- Contenu dynamique -->
+                </div>
+                <div class="reservation-actions">
+                    <button class="btn btn-secondary" onclick="closeReservationModal()">Annuler</button>
+                    <button class="btn btn-whatsapp" onclick="confirmReservation()" id="confirmBtn" disabled>📱 Réserver sur WhatsApp</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
