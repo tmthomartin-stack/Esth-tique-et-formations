@@ -114,7 +114,7 @@ Pour que le site fonctionne parfaitement, ajoutez ces images dans le dossier `/i
 ## 📞 **Informations de Contact**
 - **Téléphone** : 06 19 69 89 84
 - **Email** : contact@esthetique-formations.fr
-- **Horaires** : Lun-Ven: 9h-19h, Sam: 9h-17h
+- **Horaires** : Lun-Ven: 9h-12h-14h-18h
 
 ## 🚀 **Utilisation**
 1. Ouvrez `index.html` dans un navigateur
